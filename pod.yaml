@@ -1,1 +1,11 @@
-wdegg
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+  labels:
+    tier: tier-1
+    app: app1
+spec:
+  containers:
+    - name: nginx
+      image: nginx
